@@ -6,3 +6,9 @@ body {
     font-size: 200px;
     font-family: sans-serif;
 }
+
+img {
+    border-width: 10px;
+    border-color: aqua;
+    border-style: dashed;
+}
