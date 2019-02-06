@@ -11,6 +11,6 @@ przycisk.onclick = function () {
         // jak klikniesz ok
     } else {
         // jak klikniesz cancel
-        //jakim sposobem chcesz ją kilić?
+        //to cię nie zabije
     }
 }

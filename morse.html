@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        
+        <title>Alfabet Morse'a</title>
+    </head>
+    <body>
+        <a href="index.html">Powrót do strony głównej</a><br/>
+        
+        Wpisz zdanie, które chcesz przetłumaczyć na alfabet Morse'a:
+        <input id="zdanie"/>
+        <button id="przycisk">Ok</button><br/>
+        <input id="wynik" readonly/>
+
+        <script src="morse.js"></script>
+        <script type="text/javascript">
+            document.getElementById('przycisk').onclick = function () {
+                var sentence = document.getElementById('zdanie').value;
+                var resultBox = document.getElementById('wynik');
+
+                resultBox.value = toMorse(sentence);
+            };
+        </script>
+    </body>
+</html>
